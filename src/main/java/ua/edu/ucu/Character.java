@@ -2,14 +2,18 @@ package ua.edu.ucu;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import ua.edu.ucu.kicks.Kick;
 
 @Data
 @AllArgsConstructor
 public abstract class Character {
     private int power;
     private int hp;
+    private Kick kick;
 
-    public abstract void kick(Character c);
+    public void kick(Character c) {
+        kick.kick(this, c);
+    };
 
     public boolean isAlive() {
         return hp > 0;

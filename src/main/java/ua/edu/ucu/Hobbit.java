@@ -1,14 +1,8 @@
 package ua.edu.ucu;
-
-import java.util.Random;
+import ua.edu.ucu.kicks.CryKick;
 
 public class Hobbit extends Character {
     public Hobbit() {
-        super(0, 3);
-    }
-
-    @Override
-    public void kick(Character c) {
-        
+        super(0, 3, new CryKick());
     }
 }
