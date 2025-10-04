@@ -1,10 +1,8 @@
 package ua.edu.ucu;
 
-import java.util.Random;
-
-public class King extends Character {
+public class King extends Noble {
     public King() {
-        super(new Random().nextInt(15 - 5) + 5, new Random().nextInt(15 - 5) + 5);
+        super(5, 15, 5, 15);
     }
 
     @Override
